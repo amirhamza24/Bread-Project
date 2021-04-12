@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: #faf2f2;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+.navbar img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nav-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-menu ul li a:after {
+    content: '';
+    width: 0;
+    height: 4px;
+    background: #fd4235;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-menu ul li a:hover:after {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 8% 0% 6%;
+    position: absolute;
+    
+}
+
+nav .header-main h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fd4235;
+    line-height: 70px;
+    margin-bottom: 25px;
+}
+
+nav .header-main p {
+    font-weight: 500;
+}
+
+.main-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 40px;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.main-btn:hover {
+    background: #fd4235;
+    border: 2px solid #fd4235;
+    color:#fff;
+}
+
+.second {
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second .row-img {
+    width: 35%;
+}
+
+.second .row-text {
+    width: 50%;
+    padding-top: 20px;
+}
+.second .row-text h1 {
+    font-size: 65px;
+    font-weight: 700;
+    border-bottom: 4px solid #333;
+    color: #fd4235;
+}
+
+.second .row-text .color {
+    color: #333;
+}
+
+.second .row-text p {
+    font-size: 17px;
+    font-weight: 500;
+    padding-top: 24px;
+    margin-bottom: 55px;
+    line-height: 22px;
+}
+
+.second .row-text .sec-btn {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.second .row-text .sec-btn:hover {
+    background: #fd4235;
+    color: #fff;
+    border: 2px solid #fd4235;
+}
+
+.product {
+    padding: 0px 55px;
+    margin-left: 20px;
+}
+
+.product h1 {
+    font-size: 65px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.product .color {
+    color: #fd4235;
+    border-bottom: 3px solid #000;
+}
+
+.all-pro {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 15px;
+    padding-left: 10px;
+}
+.all-pro .images {
+    margin-bottom: 10px;
+    border: 25px solid #e7e4e3;
+    float: left;
+    height: 300px;
+    transition: 0.6s;
+}
+
+.all-pro .images:hover {
+    border: 25px solid #fd4235;
+}
+
+.all-pro .text h1 {
+    font-size: 22px;
+    text-align: center;
+    color: #fd4235;
+}
+
+.gallery {
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 6%;
+}
+
+.gallery span {
+    color: #fd4235;
+    border-bottom: 3px solid #000;
+}
+
+.gallery h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+}
+
+.row .prod {
+    position: relative;
+}
+
+.row .prod img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0,0.6);
+}
+
+.layer h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    opacity: 1;
+    bottom: 43%;
+}
+
+.landing {
+    padding-top: 70px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.landing h1 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.landing span {
+    color: #fd4235;
+    border-bottom: 3px solid #000;
+}
+
+.page {
+    margin-top: 100px;
+    display: flex;
+    padding: ;
+    justify-content: space-between;
+}
+
+.page .form {
+    padding: 30px;;
+    background: #9400d3;
+}
+
+.page .form .grp {
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+.page .form .grp:last-child {
+    margin-bottom: 0px;
+}
+
+.page .form .grp input {
+    width: 453px;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+
+.page .form textarea {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+    resize: none;
+}
+
+.page .form-img {
+    width: 50%;
+    margin-top: 60px;
+}
+
+.page .form .btn {
+    padding: 10px 43px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    background: #9400d3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.page .form .btn:hover {
+    background: #fff;
+    color: #333;
+    border: 1px solid #fff;
+}
+
+
+.footer {
+    margin-top: 200px;
+    background: #333;
+    padding: 50px 35px;
+    color: #fff;
+}
+
+.footer .con {
+    font-size: 45px;
+    font-weight: 700;
+    border-bottom: 8px solid #fff;
+    display: inline-block;
+}
+
+.footer .text {
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.footer .text img {
+    padding-right: 15px;
+}
+
+.footer .info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .info .address h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .info .denshop h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .info .follow h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .info .insta h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer .info .insta .test {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px 20px;
+}
+
+.footer .info .address img {
+    cursor: pointer;
+}
+
+.footer .info .denshop p {
+    cursor: pointer;
+}
+
+.footer .info .follow img {
+    cursor: pointer;
+}
+
+.footer .info .insta .test img {
+    cursor: pointer;
+}
